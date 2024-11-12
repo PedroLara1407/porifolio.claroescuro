@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: monospace;
+}  
+
+body{
+    background-color: #f0f8ff;
+    color: #353434; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+} 
+
+header{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #353434; 
+    padding: 20px; 
+    color: #f0f8ff;
+} 
+
+header button{
+    background-color: #f0f8ff; 
+    color: #353434; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 10px;
+} 
+
+section{ 
+    padding: auto 20px; 
+    margin: 20px auto;
+    height: 100vh; 
+    width: 70%;
+} 
+
+#sobre div{
+    width: 50%;
+} 
+
+#sobre p{
+    padding-right: 20px;
+}
+
+#sobre img{
+    height: 700px; 
+    border-radius: 10px;
+} 
+
+#sobre{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+} 
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+h3{
+    margin-bottom: 20px; 
+    font-size: 2.5em;
+} 
+
+p{
+    font-size: 20px;
+}
+
+button{ 
+    font-size: 20px;
+
+}
+.projeto{
+    background-color: #eeeeee; 
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+} 
+
+#projetos{
+    text-align: center;
+} 
+
+a{
+    color: rgb(0, 119, 255);
+}
+
+/* -------MODO ESCURO----------------- */
+
+.dark-mode{
+    background-color: #353434;
+    color: #e7eaee;
+} 
+
+.dark-mode header{
+    background-color: #1d1d1d;
+} 
+
+.dark-mode header button{ 
+    background-color: #1d1d1d;
+    color: #f0f8ff;
+} 
+
+.dark-mode .projeto{
+    background-color: #222222;
+}  
+
+.dark-mode a{
+    color: #ffc400;
+}
+
+@media (max-width:480px){   
+/* HEADER */ 
+h1{
+    font-size: 25px; 
+}
+
+
+/* SOBRE  */
+    #sobre{
+        display: grid;  
+        margin: 0; 
+        padding: 0; 
+    } 
+    #sobre div{
+        width: 100%;
+    }
+    #sobre h2{
+        font-size: 28px;  
+        margin: 10px;
+    } 
+    #sobre p{
+        text-align: center; 
+        font-size: 18px;
+    }
+    #sobre img{
+        height: 350px; 
+        object-fit: contain; 
+        margin-left: 7px; 
+    } 
+
+
+  /* PROJETOS */ 
+
+    #projetos{
+        margin-top: 55%;  
+        margin-left: 10%; 
+        width: 80%;
+    } 
+    #projetos p{
+        font-size: 20px;
+    } 
+    #projetos h3{
+        text-align: center; 
+        font-size: 30px;
+    } 
+    .projeto{
+        margin-bottom: 25px; 
+    } 
+    .projeto p{
+        text-align: left; 
+    } 
+
+
+}
